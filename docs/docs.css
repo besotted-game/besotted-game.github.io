@@ -1,0 +1,59 @@
+:root {
+    --sidenav-width: 15%;
+}
+
+body {
+    top: 0;
+    bottom: 0;
+    font-family: 'Verdana', sans-serif;
+    color: white;
+    background-color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #222;
+}
+
+p.note {
+    border-left: 5px solid blue;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 255, 0.25);
+}
+
+h2.gd-class {
+    border-bottom: 5px solid yellow;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 0, 0.25);
+}
+
+.sidenav {
+    height: 100%;
+    width: var(--sidenav-width);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+}
+
+.main {
+    padding-left: 1em;
+    margin-left: var(--sidenav-width);
+}
+
+code {
+    background-color: #222;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #111;
+}
