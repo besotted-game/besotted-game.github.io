@@ -1,10 +1,12 @@
 :root {
-    --sidenav-width: 15%;
+    --sidenav-width: 300px;
+}
+
+html {
+    height: 100%;
 }
 
 body {
-    top: 0;
-    bottom: 0;
     font-family: 'Verdana', sans-serif;
     color: white;
     background-color: #333;
@@ -28,12 +30,20 @@ p.note {
     border-left: 5px solid blue;
     padding: 0.5em;
     background-color: rgba(0, 0, 255, 0.25);
+    width: 50%;
+    box-shadow: 0 5px 10px #222;
+}
+
+h2, h3, h4 {
+    width: 75%;
 }
 
 h2.gd-class {
-    border-bottom: 5px solid yellow;
+    border-top: 5px solid yellow;
     padding: 0.5em;
     background-color: rgba(255, 255, 0, 0.25);
+    box-shadow: 0 5px 10px #222;
+    padding-left: 1.5em;
 }
 
 .sidenav {
@@ -49,6 +59,10 @@ h2.gd-class {
 .main {
     padding-left: 1em;
     margin-left: var(--sidenav-width);
+    width: 50%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
 }
 
 code {
