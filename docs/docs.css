@@ -9,12 +9,25 @@ html {
 body {
     font-family: 'Verdana', sans-serif;
     color: white;
-    background-color: #333;
+    background-color: #202326;
+}
+
+div#content {
+    margin: 0 auto;
+    width: 80%;
 }
 
 table {
     border-collapse: collapse;
     border: 1px solid black;
+}
+
+tr {
+    background-color: #2e3147;
+}
+
+tr:nth-child(even) {
+    background-color: #3a3e57;
 }
 
 th, td {
@@ -23,27 +36,43 @@ th, td {
 }
 
 th {
-    background-color: #222;
+    background-color: #1f1e45;
 }
 
 p.note {
-    border-left: 5px solid blue;
     padding: 0.5em;
-    background-color: rgba(0, 0, 255, 0.25);
     width: 50%;
     box-shadow: 0 5px 10px #222;
+}
+
+p.gd-class-info {
+    border-left: 5px solid rgb(0, 127, 127);
+    background-color: rgba(0, 50, 50);
+}
+
+a {
+    color: #88CBEC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c5ecff;
+    text-decoration: underline;
+}
+
+a.gd-class-extends {
+    font-weight: bold;
 }
 
 h2, h3, h4 {
     width: 75%;
 }
 
-h2.gd-class {
+h2.gd-class-name {
     border-top: 5px solid yellow;
     padding: 0.5em;
     background-color: rgba(255, 255, 0, 0.25);
     box-shadow: 0 5px 10px #222;
-    padding-left: 1.5em;
 }
 
 .sidenav {
@@ -53,21 +82,35 @@ h2.gd-class {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #25282B;
 }
 
 .main {
-    padding-left: 1em;
+    padding-left: 3em;
     margin-left: var(--sidenav-width);
     width: 50%;
-    background-color: #444;
+    background-color: #2E3236;
     position: absolute;
     top: 0;
+    left: 0;
 }
 
 code {
-    background-color: #222;
+    color: #D58F8F;
+    background-color: #282834;
     padding: 0.5em;
+    font-size: 1em;
     border-radius: 5px;
     border: 1px solid #111;
+}
+
+div.gd-class-block {
+    margin-left: 2em;
+}
+
+h4.gd-function-name {
+    font-weight: normal;
+}
+
+h4.gd-function-name code {
 }
